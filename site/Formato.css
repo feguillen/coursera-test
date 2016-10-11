@@ -1,73 +1,32 @@
 
 body {
-	background: url(ImgGenerales/fondo.png) repeat fixed;
+	background: url(ImgGenerales/fondogr.jpg) repeat fixed;
 	font-family: 'David Libre', serif;
 	color: #FFF;
+
 }
 
-nav {
-	background: #8B0000; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left bottom, #B22222, #8B0000); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top right, #B22222, #8B0000); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top right, #B22222, #8B0000); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to top right, #B22222, #8B0000); /* Standard syntax */
-    position: relative;
-    opacity: .85;
+#header-nav {
+	border: 1px red solid;
 }
 
-#logo{
-	background: url(ImgGenerales/logo.png) no-repeat;
-	width:150px;
-	height: 73px;
-	margin-top: 18px;
-	margin-bottom: 18px;
-	margin-left: 5px;
-} 
+.encabezado {
+	border: 1px blue solid;	
+}
+
+.navbar-brand {
+	border: 1px yellow solid;
+	height:auto;
+	width:auto;
+}
 
 .navbar-brand h1 {
-	color: #FFF;
-	text-shadow: 5px 5px #000000;
-	font-size: 2em;
-	font-weight: bold;
-	margin-top: 0; 
-	margin-bottom: 0;
-	padding-top: 10px;
+	width:auto;
 }
 
-.navbar-brand p{
-	color:#DDD;
-	font-size: 1em;
+#logo {
+	background: url("ImgGenerales/logo.png");
+	float: left;
 }
 
-.img-thumbnail {
-	height: "115px";
-}
 
-.descrip{
-	clear: both;
-} 
-
-ul.Fotos li {
-	position: relative;
-
-}
-
-ul.Fotos span {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	height: auto;
-	width: 200px;
-	text-align: center;
-	background-color: #000;
-	opacity: 0.75;
-	color: #fff;
-}
-
-ul.Fotos span {
-	margin-left: -10000px;
-}
-
-ul.Fotos li:hover span {
-	margin-left: 0px;
-}
