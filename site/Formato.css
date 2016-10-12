@@ -8,25 +8,78 @@ body {
 
 #header-nav {
 	border: 1px red solid;
+
 }
 
 .encabezado {
-	border: 1px blue solid;	
+	border: 2px blue solid;	
+
 }
 
 .navbar-brand {
 	border: 1px yellow solid;
 	height:auto;
-	width:auto;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 0.5;
+}
+
+.navbar-header {
+	border: 4px black solid;
+}
+
+.navbar-header .logo {
+	border: 0px magenta solid;
+	height: auto;
+	clear:both;
+}
+
+#ImgLogo {
+	/* margin-top: 10px; */
+	margin-right: 10px;
+	border: 2px pink solid;
 }
 
 .navbar-brand h1 {
 	width:auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 1px purple solid;
+	font-family: 'Lobster', cursive;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #fff;
 }
 
-#logo {
-	background: url("ImgGenerales/logo.png");
-	float: left;
+.navbar-brand p {
+	width:auto;
+	border: 1px magenta solid;
+	font-weight: bolder;
+	color: #fff;
 }
 
+#elembarra {
+	margin-top: 10px;
+}
 
+#elembarra a {
+	text-align: center;
+	color: #fff;
+}
+
+#elembarra a:hover {
+	background: #333;
+}
+
+#elembarra a span {
+	font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #fff;
+ }
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+}

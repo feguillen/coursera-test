@@ -7,29 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="Formato.css">
 	<link href="https://fonts.googleapis.com/css?family=David+Libre:400,500,700&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 </head>
 <body>
 <header>
 	<nav id="header-nav" class="navbar navbar-inverse navbar-static-top">
 		<div class="container encabezado">
-			<a class="navbar-brand" href="MainPage.html">
-				<img src="ImgGenerales/logo.png" class="img-responsive pull-left">
-				<h1 class="">Tu Casa en Guate</h1>
-				<p>Bienes raices</p>
-			</a> <!-- Termina marca-->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barra">
-				<span class="sr-only">Toggle navigation</span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-			</button>
+			<div class="navbar-header">
+				<a class="pull-left center-block logo" href="MainPage.html">
+					<img id="ImgLogo" src="ImgGenerales/logo.png">
+				</a>
+				<a class="navbar-brand" href="MainPage.html">
+					<h1 class="text-left">Tu Casa en Guate</h1>
+					<p class="text-left">Bienes raices</p>
+				</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barra">
+					<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+				</button>
+			</div>
+
 			<div id="barra" class="collapse navbar-collapse NavHeader-Collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="MainPage.html" class="" ><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					<li><a href="Alquiler.html" class="" ><span class="glyphicon glyphicon-transfer"></span>Alquiler</a></li>
-					<li><a href="Venta.html" class="" ><span class="glyphicon glyphicon-usd"></span>Venta</a></li>
-					<li><a href="MainPage.html" class="" ><span class="glyphicon glyphicon-earphone"></span>Conctacto</a></li>
+				<ul id="elembarra" class="nav navbar-nav navbar-right">
+					<li><a href="MainPage.html" class="" ><span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a></li>
+					<li><a href="Alquiler.html" class="" ><span class="glyphicon glyphicon-transfer"></span><br class="hidden-xs">Alquiler</a></li>
+					<li><a href="Venta.html" class="" ><span class="glyphicon glyphicon-usd"></span><br class="hidden-xs">Venta</a></li>
+					<li><a href="MainPage.html" class="" ><span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Conctacto</a></li>
 				</ul>
 			</div>
 		</div> <!-- Termina contenedor del encabezado-->
@@ -40,27 +46,32 @@
 	<h2 class="text-center">Alquiler</h2>
 	<h3 class="text-left">Casas</h3>
 	<div class="row">
-  		<div class="col-sm-6 col-md-4">
-    		<div class="thumbnail">
-      			<img src="CasaBiguriaZ14/Princ.jpg" alt="Casa">
+  		<div class="col-sm-12 col-md-4">
+    		<a class="thumbnail" href="">
+      			<img src="CasaBiguriaZ14/Princ.jpg" alt="Casa" class="img-responsive">
       			<div class="caption">
         			<h3>Casa en Zona 14</h3>
         			<p>Casa hubicada en zona 14</p>
       			</div>
-    		</div>
+    		</a>
   		</div>
-  		<div class="col-sm-6 col-md-4">
-    		<div class="thumbnail">
-      			<img src="CasaBiguriaZ14/Princ.jpg" alt="Casa">
+  		<div class="col-sm-12 col-md-4">
+    		<a class="thumbnail" href="">
+      			<img src="CasaZ14/Princ.jpg" alt="Casa">
       			<div class="caption">
         			<h3>Casa en Zona 14</h3>
         			<p>Casa hubicada en zona 14</p>
       			</div>
-    		</div>
+    		</a>
   		</div>
 	</div>
-
 </div>
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="text-center">&copy; Copyright Tu Casa en Guate 2016</div>
+    </div>
+  </footer>
 
 <!--scripts de java -->
 <script src="js/jquery-3.1.1.js"></script>
