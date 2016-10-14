@@ -2,22 +2,30 @@
 body {
 	background: url(ImgGenerales/fondogr.jpg) repeat fixed;
 	font-family: 'David Libre', serif;
-	color: #FFF;
+	color: #fff;
 
 }
 
-#header-nav {
-	border: 1px red solid;
+/* Formato del encabezado */
 
+#header-nav {
+	background: url(ImgGenerales/fondogr.jpg) repeat fixed;
+
+}
+
+.navbar {
+	margin-bottom: 0px;
 }
 
 .encabezado {
-	border: 2px blue solid;	
-
+	background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left bottom, #000, #3B3B3B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, #000, #3B3B3B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, #000, #3B3B3B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top right, #000, #3B3B3B); /* Standard syntax */	
 }
 
 .navbar-brand {
-	border: 1px yellow solid;
 	height:auto;
 	padding: 0;
 	margin-top: 0;
@@ -25,36 +33,31 @@ body {
 	line-height: 0.5;
 }
 
-.navbar-header {
-	border: 4px black solid;
+.navbar .container .navbar-brand {
+	margin-left: 10px;
 }
 
 .navbar-header .logo {
-	border: 0px magenta solid;
 	height: auto;
 	clear:both;
-}
-
-#ImgLogo {
-	/* margin-top: 10px; */
-	margin-right: 10px;
-	border: 2px pink solid;
 }
 
 .navbar-brand h1 {
 	width:auto;
 	margin-top: 10px;
 	margin-bottom: 5px;
-	border: 1px purple solid;
 	font-family: 'Lobster', cursive;
 	font-size: 2.5em;
 	font-weight: bold;
 	color: #fff;
 }
 
+.navbar-brand h1:hover, .navbar-brand h1:focus {
+  text-decoration: none;
+}
+
 .navbar-brand p {
 	width:auto;
-	border: 1px magenta solid;
 	font-weight: bolder;
 	color: #fff;
 }
@@ -82,4 +85,117 @@ body {
 
 .navbar-header button.navbar-toggle {
 	clear: both;
+	margin-top: -40px;
+}
+
+.navbar-toggle {
+	clear:both;
+	}
+
+/* Formato de la página*/
+
+.cuerpo {
+	background: #3B3B3B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left bottom, #3B3B3B, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, #3B3B3B, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, #3B3B3B, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top right, #3B3B3B, #000); /* Standard syntax */	
+}
+
+
+/* Formato del pie de página */
+
+.panel-footer {
+	background: url(ImgGenerales/fondogr.jpg) repeat fixed;	
+	padding-top: 0px;
+}
+
+.panel-footer .container {
+	background: #000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left bottom, #000, #3B3B3B); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, #000, #3B3B3B); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, #000, #3B3B3B); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top right, #000, #3B3B3B); /* Standard syntax */	
+}
+
+/* Formato de los tamaños de la página */
+
+/* Aparatos grandes */
+@media (min-width: 1200px) {
+
+}
+
+/* Aparatos medianos */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.navbar-brand h1 {
+		font-size: 2em;
+	}
+
+	.navbar-nav li a {
+		padding: 10px;
+	}
+
+	#elembarra a span {
+		font-size: 1.4em;
+	}
+
+
+}
+
+/* Aparatos pequeños */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.navbar-brand h1 {
+		font-size: 1.9em;
+	}
+
+	.navbar-nav li a {
+		padding: 15px 8px;
+	}
+
+	#elembarra a span {
+		font-size: 1.2em;
+	}
+	
+}
+
+/* Aparatos extra pequeños */
+@media (max-width: 767px) {
+	
+	.navbar-brand h1 {  /*Nombre de la empresa*/
+		font-size: 6vw;
+	}
+
+	.navbar-brand p {  /*Rótulo Bienes Raices*/
+		font-size: 2.5vw;
+	}
+
+	.navbar-nav li a {  /*Menu*/
+		padding: 5px 0px;
+	}
+
+	#ImgLogo {  /*Logo*/
+		max-width: 150px;
+		width: 30vw;
+		height: auto;
+		margin-right: 3px;
+	}
+
+	#elembarra a span {  /*Menu*/
+		font-size: 1.2em;
+		vertical-align: center;
+	}
+
+	#elembarra span {
+		margin-right: 5px;
+	}
+
+	h2 {
+		font-size: 5.5vw;
+	}
+
+	h3 {
+		font-size: 5vw;
+	}
 }
