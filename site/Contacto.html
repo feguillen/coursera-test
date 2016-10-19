@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Propiedad: ContáctanosVenta</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="Formato.css">
+	<link href="https://fonts.googleapis.com/css?family=David+Libre:400,500,700&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<!--scripts de java -->
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<header>
+	<nav id="header-nav" class="navbar navbar-inverse navbar-static-top">
+		<div class="container encabezado">
+			<div class="navbar-header">
+				<a class="pull-left center-block logo hidden-xs" href="MainPage.html">
+					<img id="ImgLogo" src="ImgGenerales/logo.png">
+				</a>
+				<a class="navbar-brand" href="MainPage.html">
+					<h1 class="text-left">Mi Propiedad</h1>
+					<p class="text-left">Bienes raices</p>
+				</a>
+				<button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barra">
+					<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+				</button>
+			</div>  <!-- termina la marca con el logo -->
+
+			<div id="barra" class="collapse navbar-collapse NavHeader-Collapse">
+				<ul id="elembarra" class="nav navbar-nav navbar-right">
+					<li><a href="MainPage.html" class="botonmenu" ><span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a></li>
+					<li><a href="Alquiler.html" class="botonmenu" ><span class="glyphicon glyphicon-transfer"></span><br class="hidden-xs">Alquiler</a></li>
+					<li><a href="Venta.html" class="botonmenu" ><span class="glyphicon glyphicon-usd"></span><br class="hidden-xs">Venta</a></li>
+					<li class="active"><a href="Contacto.html" class="botonmenu"><span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Conctacto</a></li>
+				</ul>
+			</div>  <!-- Termina los botones -->
+
+		</div> <!-- Termina contenedor del encabezado-->
+	</nav>    
+</header>  
+
+<div class="container cuerpo">
+	<h2 class="text-center">Contáctanos</h2>
+
+	<div class="row">
+      
+      <div class="col-xs-12 col-sm-6 cuadrocont">
+        <h3 class="text-center">Rodrigo Antonio Estrada</h3>
+        <ul class="list-group">
+          <li class="list-group-item text-center">
+            <a href="mailto:colonialhouses@gmail.com"><span class="glyphicon glyphicon-envelope contacto"></span><br>colonialhouses@gmail.com</a>
+          </li>
+          <li class="list-group-item text-center">
+            <a href="tel:+50230886825"><span class="glyphicon glyphicon-phone-alt contacto"></span><br>(502) 3088-6825</a>
+          </li>
+        </ul>
+      </div>  <!-- Cierra contenedor del contacto -->
+
+      <div class="col-xs-12 col-sm-6 cuadrocont">
+        <h3 class="text-center">Federico Guillén Ortiz</h3>
+        <ul class="list-group">
+          <li class="list-group-item text-center">
+            <a href="mailto:feguillen@gmail.com"><span class="glyphicon glyphicon-envelope contacto"></span><br>feguillen@gmail.com</a>
+          </li>
+          <li class="list-group-item text-center">
+            <a href="tel:+50240128181"><span class="glyphicon glyphicon-phone-alt contacto"></span><br>(502) 4012-8181</a>
+          </li>
+        </ul>
+      </div>  <!-- Cierra contenedor del contacto -->
+    </div>  <!-- Cierra contenedor de la fila -->
+
+</div>  <!-- Termina el texto del cuerpo -->
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="text-center">&copy; Copyright Tu Casa en Guate 2016</div>
+    </div>
+  </footer>
+</body>
+</html>

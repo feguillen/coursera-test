@@ -1,29 +1,68 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang = "en">
 <head>
 	<meta charset="utf-8">
-	<title>Bienes Raices</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mi Propiedad</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="Formato.css">
 	<link href="https://fonts.googleapis.com/css?family=David+Libre:400,500,700&subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<!--scripts de java -->	
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 
 </head>
 <body>
-<div class="container">
-<div class="row titulo">
-	<a> 
-		
-		<img src="CasaBiguriaZ14/IMG01.jpg" width="100" height="100" alt= "No sale la imagen" />
-	</a>
-	<h1>Consultoría de Bienes Raices R&amp;F</h1>
-</div>
-<div class="row">
-	<h2>Quienes somos</h2>
-	<div>"Somos una empresa inmobiliaria que busca la satisfacción de sus clientes ofreciendo bienes de alta calidad para compra o renta. Nos comprometemos a buscar oportunidades y ofrecer ofertas rápidamente"</div>
-	<a class="button" href="venta.html">Venta</a>
-	<a class="Boton" href="Alquiler.html">Alquiler</a>
-</div>
-</div>
+<header>
+	<nav id="header-nav" class="navbar navbar-inverse navbar-static-top">
+		<div class="container encabezado">
+			<div class="navbar-header">
+				<a class="pull-left center-block logo hidden-xs" href="MainPage.html">
+					<img id="ImgLogo" src="ImgGenerales/logo.png">
+				</a>
+				<a class="navbar-brand" href="MainPage.html">
+					<h1 class="text-left">Mi Propiedad</h1>
+					<p class="text-left">Bienes raices</p>
+				</a>
+				<button id="navbarToggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barra">
+					<span class="sr-only">Toggle navigation</span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+				</button>
+			</div>  <!-- termina la marca con el logo -->
+
+			<div id="barra" class="collapse navbar-collapse NavHeader-Collapse">
+				<ul id="elembarra" class="nav navbar-nav navbar-right">
+					<li class="active"><a href="MainPage.html" class="botonmenu" ><span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a></li>
+					<li><a href="Alquiler.html" class="botonmenu" ><span class="glyphicon glyphicon-transfer"></span><br class="hidden-xs">Alquiler</a></li>
+					<li><a href="Venta.html" class="botonmenu" ><span class="glyphicon glyphicon-usd"></span><br class="hidden-xs">Venta</a></li>
+					<li><a href="Contacto.html" class="botonmenu" ><span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Conctacto</a></li>
+				</ul>
+			</div>  <!-- Termina los botones -->
+
+		</div> <!-- Termina contenedor del encabezado-->
+	</nav>    
+</header>  
+
+<div class="container cuerpo">
+	<div class="jumbotron">
+		<div id="imgJumbo" class="container">
+			<img src="imgGenerales/PresentacionXS.jpg" alt="Ciudad de Guatemala" class="img-responsive visible-xs">
+		</div>
+	</div>
+	<h2 class="text-center">Quienes somos</h2>
+	<p class="text-center">"Somos una empresa inmobiliaria que busca la satisfacción de sus clientes ofreciendo bienes de alta calidad para compra o renta. Nos comprometemos a buscar oportunidades y ofrecer ofertas rápidamente"</p>
+</div>  <!-- Termina el texto del cuerpo -->
+
+  <footer class="panel-footer">
+    <div id="piepag" class="container">
+      <div class="text-center">&copy; Copyright Tu Casa en Guate 2016</div>
+    </div>
+  </footer>
+
 </body>
 </html>

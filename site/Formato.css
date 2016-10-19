@@ -10,7 +10,6 @@ body {
 
 #header-nav {
 	background: url(ImgGenerales/fondogr.jpg) repeat fixed;
-
 }
 
 .navbar {
@@ -95,19 +94,38 @@ body {
 /* Formato de la página*/
 
 .cuerpo {
-	background: #3B3B3B; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left bottom, #3B3B3B, #000); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top right, #3B3B3B, #000); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top right, #3B3B3B, #000); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to top right, #3B3B3B, #000); /* Standard syntax */	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,3b3b3b+100 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #000000 0%, #3b3b3b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  #000000 0%,#3b3b3b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  #000000 0%,#3b3b3b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3b3b3b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
+.thumbnail {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8c3310+1,752201+35,351400+100 */
+
+}
+
+.thumbnail h3, .thumbnail p {
+	color: #000;
+}
+
+.thumbnail:hover, .thumbnail:focus {
+	text-decoration: none;
+}
+
+.list-group a {
+	text-decoration: none;
+	color: #3b3b3b;
+}
 
 /* Formato del pie de página */
 
 .panel-footer {
-	background: url(ImgGenerales/fondogr.jpg) repeat fixed;	
-	padding-top: 0px;
+	background: url(ImgGenerales/fondogr.jpg) repeat fixed;
+	padding: 0px;
 }
 
 .panel-footer .container {
@@ -123,10 +141,24 @@ body {
 /* Aparatos grandes */
 @media (min-width: 1200px) {
 
+	.container .jumbotron {
+		background: url('/ImgGenerales/PresentacionMD.jpg');
+		height: 775px;
+	}
+
+	.cuerpo {
+		padding-bottom: 20px;
+	}
+
 }
 
 /* Aparatos medianos */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+	.container .jumbotron {
+		background: url('/ImgGenerales/PresentacionSM.jpg');
+		height: 640px;
+	}
 
 	.navbar-brand h1 {
 		font-size: 2em;
@@ -140,11 +172,23 @@ body {
 		font-size: 1.4em;
 	}
 
+	.cuerpo {
+		padding-bottom: 15px;
+	}
 
 }
 
 /* Aparatos pequeños */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	.container .jumbotron {
+		background: url('/ImgGenerales/PresentacionXS.jpg');
+		height: 496px;
+	}
+
+	.jumbotron {
+		margin-top: 15px;
+	}
 
 	.navbar-brand h1 {
 		font-size: 1.9em;
@@ -156,6 +200,10 @@ body {
 
 	#elembarra a span {
 		font-size: 1.2em;
+	}
+
+	.cuerpo {
+		padding-bottom: 10px;
 	}
 	
 }
@@ -197,5 +245,21 @@ body {
 
 	h3 {
 		font-size: 5vw;
+	}
+
+	.container .jumbotron {
+		padding: 0;
+	}
+
+	#imgJumbo {
+		padding: 0;
+	}
+
+	.cuerpo {
+		padding-bottom: 10px;
+	}
+
+	#piepag {
+		padding: 0;
 	}
 }
